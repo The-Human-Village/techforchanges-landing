@@ -1,0 +1,20 @@
+stages:
+  local:
+    nextBuildEnv:
+      # Insert build time variables here
+      NEXT_PUBLIC_API_URL: ''
+      NEXT_PUBLIC_APP_URL: ''
+      NEXT_GOOGLE_API_KEY: ''
+
+    nextRuntimeConfig:
+      # Insert NextJS BE runtime variables here
+      TEST: 'test'
+
+    nextPublicConfig:
+      # Insert NextJS FE runtime variables here
+      TEST: 'test'
+
+    environment:
+      #app__nextRuntimeEnv__BACKEND_RUNTIME_VARIABLE: you can override the runtime env like this
+      #app__nextPublicEnv__PUBLIC_RUNTIME_VARIABLE: you can override the public env like this
+      #app__nextBuildEnv__NEXT_PUBLIC_PAGE_TITLE: this won"t work at runtime
